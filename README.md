@@ -53,7 +53,7 @@ Setup your launch.json to attach to the Kudu service by modifying the code below
             "request": "attach",
             "name": "Attach to Kudu",
             "address": "<your-app-service-name>.scm.azurewebsites.net",
-            "port": 9229,  // or 5858, depending on your setup
+            "port": 9229,  
             "localRoot": "${workspaceFolder}",
             "remoteRoot": "/home/site/wwwroot",
             "protocol": "inspector",
@@ -61,6 +61,7 @@ Setup your launch.json to attach to the Kudu service by modifying the code below
         }
     ]
 }
+```
 Make sure the address,port,remoteRoot are correct.
 Ensure you have the debugger server running on your app. node --inspect or via an environment variable NODE_OPTIONS='--inspect'
 Ensure your firewall, networking will allow traffic from your computer to the kudu service and the debugger port 9229.
