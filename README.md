@@ -69,4 +69,3 @@ In VS Code
 
 Press Ctrl + Shift + D or click the Run and Debug icon (the bug with a play button) on the left sidebar.
 Click the blue button labeled Run and Debug to start the application and attach the debugger.
-```
